@@ -15,10 +15,10 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_DRG.mk
+    $(LOCAL_DIR)/potato_DRG.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_DRG-eng \
-    aosp_DRG-user \
-    aosp_DRG-userdebug
+    potato_DRG-eng \
+    potato_DRG-user \
+    potato_DRG-userdebug
 
