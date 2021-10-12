@@ -1,6 +1,6 @@
 # Audio
-vendor.voice.path.for.pcm.voip=false
-persist.vendor.audio.fluence.speaker=false
+#vendor.voice.path.for.pcm.voip=false
+#persist.vendor.audio.fluence.speaker=false
 debug.ftm.mixerpath=/vendor/etc/mixer_paths_drg.xml
 
 # Camera
