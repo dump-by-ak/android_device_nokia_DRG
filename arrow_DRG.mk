@@ -18,9 +18,6 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
-
 # Inherit from DRG device
 $(call inherit-product, device/nokia/DRG/device.mk)
 
@@ -29,6 +26,10 @@ $(call inherit-product, device/nokia/sdm660-common/sdm660.mk)
 
 # Set Shipping API level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o.mk)
+
+# Inherit from Potato vendor
+#$(call inherit-product, vendor/potato/config/common_full_phone.mk)
+$(call inherit-product, vendor/arrow/config/common.mk)
 
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
@@ -41,7 +42,7 @@ TARGET_OTA_ASSERT_DEVICE := DRG,DRG_sprout,Dragon
 TARGET_SCREEN_HEIGHT := 2160
 TARGET_SCREEN_WIDTH := 1080
 
-PRODUCT_NAME := lineage_DRG
+PRODUCT_NAME := arrow_DRG
 PRODUCT_DEVICE := DRG
 PRODUCT_MANUFACTURER := HMD Global
 PRODUCT_BRAND := Nokia
