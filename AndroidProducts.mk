@@ -15,10 +15,10 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/arrow_DRG.mk
-
+    $(LOCAL_DIR)/arrow_DRG.mk \
+    $(LOCAL_DIR)/ancient_DRG.mk
 COMMON_LUNCH_CHOICES := \
     arrow_DRG-eng \
-  #  potato_DRG-user \
+    ancient_DRG-eng \
   #  potato_DRG-userdebug
 
